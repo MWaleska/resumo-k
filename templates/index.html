@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo.K</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Resumidor de Texto </h1>
+    <form method="POST">
+        <label for="texto">Digite ou cole seu texto abaixo:</label><br><br>
+        <textarea name="texto" required></textarea><br>
+        <button type="submit">Gerar Resumo</button>
+    </form>
+
+    {% if resumo %}
+    <div class="resumo">
+        <h2>Resumo:</h2>
+        <p>{{ resumo }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
