@@ -1,0 +1,4 @@
+Flask==2.2.3
+transformers==4.28.1
+torch==2.0.1
+language-tool-python==2.7.1
